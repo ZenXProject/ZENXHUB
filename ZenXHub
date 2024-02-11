@@ -46,3 +46,12 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet("https://rentry.co/r9it5/raw"))()
    end,
 })
+
+local Tab = Window:CreateTab("SecondTab", nil) -- Title, Image
+local Section = Tab:CreateSection("Test")
+local Button = Tab:CreateButton({
+   Name = "Destroy script",
+   Callback = function()
+   Rayfield:Destroy()
+   end,
+})
