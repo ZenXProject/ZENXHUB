@@ -25,3 +25,12 @@ local Window = Rayfield:CreateWindow({
       Key = {"https://pastebin.com/raw/7fLpsPSs"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
+
+local Tab = Window:CreateTab("🏠 Home", nil) -- Title, Image
+local Section = Tab:CreateSection("MainTab")
+local Button = Tab:CreateButton({
+   Name = "Omg Hub",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+   end,
+})
